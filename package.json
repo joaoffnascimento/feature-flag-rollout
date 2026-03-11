@@ -1,0 +1,25 @@
+{
+    "name": "feature-flag-rollout",
+    "version": "1.0.0",
+    "description": "Deterministic, zero-dependency feature flag rollout bucketing for Node.js/TypeScript",
+    "main": "dist/feature-flag-rollout.service.js",
+    "scripts": {
+        "build": "tsc",
+        "test": "jest",
+        "test:coverage": "jest --coverage"
+    },
+    "devDependencies": {
+        "@types/jest": "^29.5.14",
+        "@types/node": "^20.12.7",
+        "jest": "^29.7.0",
+        "ts-jest": "^29.1.2",
+        "typescript": "^5.4.5"
+    },
+    "jest": {
+        "preset": "ts-jest",
+        "testEnvironment": "node",
+        "testMatch": [
+            "**/tests/**/*.test.ts"
+        ]
+    }
+}
